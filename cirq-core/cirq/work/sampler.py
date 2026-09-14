@@ -477,7 +477,7 @@ class Sampler(metaclass=value.ABCMetaImplementAnyOneOf):
 
         Raises:
             ValueError: if the qid_shape of different instances of the same measurement
-            key disagree.
+                key disagree.
         """
         qid_shapes: dict[str, tuple[int, ...]] = {}
         num_instances: dict[str, int] = collections.Counter()

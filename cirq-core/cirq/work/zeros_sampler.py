@@ -58,7 +58,7 @@ class ZerosSampler(work.Sampler, metaclass=abc.ABCMeta):
 
         Raises:
             ValueError: circuit is not valid for the sampler, due to invalid
-            repeated keys or incompatibility with the sampler's device.
+                repeated keys or incompatibility with the sampler's device.
         """
         if prng is not None:
             raise ValueError("ZerosSampler has no client-side RNG.")
